@@ -4,10 +4,10 @@ Rails.application.routes.draw do
   get "/cocktails", to: "cocktails#index", as: :cocktails
 
   # add a new cocktail
-  get "/cocktails/new" to: "cocktails#new", as: :new_cocktail
+  get "/cocktails/new", to: "cocktails#new", as: :new_cocktail
 
   # view details of a cocktail
-  get "/cocktails/:id", to: "cocktails#show", as :cocktail
+  get "/cocktails/:id", to: "cocktails#show", as: :cocktail
 
   # create cocktail
   post "/cocktails", to: "cocktails#create"
