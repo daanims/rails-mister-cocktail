@@ -12,4 +12,8 @@ Rails.application.routes.draw do
   # create cocktail
   post "/cocktails", to: "cocktails#create"
 
+  # doses routes
+  resources :cocktails do
+    resources :doses
+  end
 end
