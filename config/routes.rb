@@ -14,9 +14,12 @@ Rails.application.routes.draw do
 
   # doses routes
   resources :cocktails do
-    resources :doses
+    resources :doses 
   end
 
-  # create destroy dose
+  #get "/cocktails/:cocktail_id/doses/new", to: "doses#new", as: :new_cocktail_dose
+
+  # destroy dose
+  delete "/doses/:id", to: "doses#destroy", as: :destroy_dose
 
 end
