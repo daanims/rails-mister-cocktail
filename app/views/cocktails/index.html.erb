@@ -1,5 +1,17 @@
+<style>
+h1.intro {
+    color: black;
+    text-align: center;
+}
+
+.entire-page {
+  background-color: ;
+}
+</style>
+
+<div class="entire-page">
 <div><%= render "header" %>
-<h1>Cocktails Menu</h1>
+<h1 h1 class="intro important">Cocktails Menu</h1>
 
 <div class="container">
 <div class="row">
@@ -8,8 +20,7 @@
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.loveandoliveoil.com/wp-content/uploads/2014/10/antioxidant-cocktail2-1-600x900.jpg)"><%= link_to cocktail.name, cocktail_path(cocktail) %></div>
     </div>
   <% end %>
-</div> 
 </div>
-
-
+</div>
 <%= link_to "Add a new cocktail", new_cocktail_path %>
+</div>
